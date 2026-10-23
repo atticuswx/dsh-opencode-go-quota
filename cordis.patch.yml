@@ -1,0 +1,8 @@
+# Rows inserted by this bundle. The values below are the defaults the plugin
+# falls back to; edit them here to tune the strip without touching the code.
+- insert:
+    - id: opencode-go-quota
+      name: 'dsh-opencode-go-quota'
+      config:
+        apiKeyRef: OPENCODE_GO_API_KEY
+        refreshSeconds: 30

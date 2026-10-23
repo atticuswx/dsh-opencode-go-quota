@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OpenCode Go 额度",
+    "description": "在输入框下方实时显示 OpenCode Go 套餐的 5 小时、每周与每月剩余额度，可展开查看已用金额与重置时间。"
+  }
+}

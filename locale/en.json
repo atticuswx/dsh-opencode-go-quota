@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OpenCode Go quota",
+    "description": "Shows the remaining 5-hour, weekly and monthly allowance of your OpenCode Go plan below the composer, with used amounts and reset times on demand."
+  }
+}
