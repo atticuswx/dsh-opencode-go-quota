@@ -24,10 +24,10 @@
 ### 1. 从 GitHub 安装（其他机器推荐）
 
 ```bash
-dsh plugin --profile "$DSH_PROFILE" add github:<your-github-user>/dsh-opencode-go-quota
+dsh plugin --profile "$DSH_PROFILE" add github:atticuswx/dsh-opencode-go-quota
 ```
 
-或在 Web UI 的 **设置 → 插件 → 添加** 里填写 `github:<your-github-user>/dsh-opencode-go-quota`。
+或在 Web UI 的 **设置 → 插件 → 添加** 里填写 `github:atticuswx/dsh-opencode-go-quota`。
 
 > 目标机器需要已经配置 OpenCode Go provider 与 `OPENCODE_GO_API_KEY` 凭据（插件只是复用它们，不额外保存）。
 
@@ -80,13 +80,11 @@ dsh plugin --profile "$DSH_PROFILE" add /绝对路径/dsh-opencode-go-quota
 
 ## 发布到 GitHub（维护者）
 
-先在 GitHub 新建空仓库（不要勾选 README / .gitignore / LICENSE，本仓库已包含），然后：
+仓库地址：<https://github.com/atticuswx/dsh-opencode-go-quota>
+
+发布新版本（已在本地初始化并关联 SSH remote）：
 
 ```bash
-git init -b main
-git add .
-git commit -m "feat: OpenCode Go quota strip for DeepSeek Harness"
-git remote add origin https://github.com/<your-github-user>/dsh-opencode-go-quota.git
 git push -u origin main
 git tag v1.0.0 && git push --tags
 ```
@@ -94,7 +92,7 @@ git tag v1.0.0 && git push --tags
 之后其他机器可安装固定版本：
 
 ```bash
-dsh plugin --profile "$DSH_PROFILE" add github:<your-github-user>/dsh-opencode-go-quota#v1.0.0
+dsh plugin --profile "$DSH_PROFILE" add github:atticuswx/dsh-opencode-go-quota#v1.0.0
 ```
 
 发布到 npm（可选，需先 `npm login`）：
